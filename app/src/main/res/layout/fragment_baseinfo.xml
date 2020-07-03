@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView android:layout_width="fill_parent"
+        android:layout_weight="9"
+        android:layout_height="0dp"
+        android:scrollbars="vertical"
+        android:fadingEdge="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="0dp"
+            android:paddingTop="17dp"
+            android:paddingRight="17dp"
+            android:paddingBottom="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="设备编号"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/basic_sn_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入设备编号"
+                    android:textSize="13sp"
+                    app:met_clearButton="true"
+                    app:met_iconLeft="@drawable/icon_number"
+                    app:met_iconPadding="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="设备型号"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/basic_type_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:hint="请输入设备型号"
+                    android:textSize="13sp"
+                    app:met_clearButton="true"
+                    app:met_iconLeft="@drawable/icon_type"
+                    app:met_iconPadding="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="台网代码"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/basic_netcode_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入台网代码"
+                    android:textSize="13sp"
+                    app:met_clearButton="true"
+                    app:met_iconLeft="@drawable/icon_network"
+                    app:met_iconPadding="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="台站代码"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/basic_stacode_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入台站代码"
+                    android:textSize="13sp"
+                    app:met_clearButton="true"
+                    app:met_iconLeft="@drawable/icon_station"
+                    app:met_iconPadding="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="经度"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/basic_lon_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入经度"
+                    android:textSize="13sp"
+                    app:met_clearButton="true"
+                    app:met_iconLeft="@drawable/icon_lon"
+                    app:met_iconPadding="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="纬度"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/basic_lat_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入纬度"
+                    android:textSize="13sp"
+                    app:met_clearButton="true"
+                    app:met_iconLeft="@drawable/icon_lat"
+                    app:met_iconPadding="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="高程"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/basic_totalfloor_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入高程"
+                    android:textSize="13sp"
+                    app:met_clearButton="true"
+                    app:met_iconLeft="@drawable/icon_highlevel"
+                    app:met_iconPadding="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="安装楼层"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/basic_floor_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入安装楼层"
+                    android:textSize="13sp"
+                    app:met_clearButton="true"
+                    app:met_iconLeft="@drawable/icon_floor"
+                    app:met_iconPadding="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="安装地址"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/basic_address_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入安装地址"
+                    android:textSize="13sp"
+                    app:met_clearButton="true"
+                    app:met_iconLeft="@drawable/icon_location"
+                    app:met_iconPadding="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="联系人"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/basic_contactpersion_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入联系人"
+                    android:textSize="13sp"
+                    app:met_clearButton="true"
+                    app:met_iconLeft="@drawable/icon_user"
+                    app:met_iconPadding="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="联系方式"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/basic_contacttel_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入联系方式"
+                    android:textSize="13sp"
+                    app:met_clearButton="true"
+                    app:met_iconLeft="@drawable/icon_phone"
+                    app:met_iconPadding="0dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/dev_base_setbtn"
+            style="@style/Button.Style"
+            android:background="@drawable/xui_config_bg_blue_btn"
+            android:text="上传参数" />
+    </LinearLayout>
+
+
+</LinearLayout>

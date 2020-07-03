@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_localdevice"
+    tools:context=".fragment.DevContentFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/connect_status_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/xui_config_color_gray_3"
+            android:text="请选择WIFI"
+            android:textSize="16sp" />
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:id="@+id/wifi_connectTv"
+            style="@style/InfoItem.Account"
+            android:layout_height="50dp"
+            app:sLeftIconRes="@drawable/ic_wifi"
+            app:sLeftTextString="Wi-Fi未连接"
+            app:sLeftViewMarginLeft="10dp"/>
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:id="@+id/dev_baseinfo_btn"
+            style="@style/InfoItem.Account"
+            app:sLeftTextString="基础参数" />
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:id="@+id/dev_register_btn"
+            style="@style/InfoItem.Account"
+            app:sLeftTextString="注册管理" />
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:id="@+id/dev_getparam_btn"
+            style="@style/InfoItem.Account"
+            app:sLeftTextString="获取参数" />
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:id="@+id/dev_ewarn_btn"
+            style="@style/InfoItem.Account"
+            app:sLeftTextString="预警演练" />
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:id="@+id/dev_voice_btn"
+            style="@style/InfoItem.Account"
+            app:sLeftTextString="音量调节" />
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:id="@+id/dev_reboot_btn"
+            style="@style/InfoItem.Account"
+            app:sLeftTextString="系统重启" />
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:id="@+id/dev_update_btn"
+            style="@style/InfoItem.Account"
+            app:sDividerLineType="none"
+            app:sLeftTextString="系统升级" />
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:id="@+id/dev_delete_btn"
+            style="@style/InfoItem.Account"
+            android:layout_marginTop="50dp"
+            app:sDividerLineType="none"
+            app:sLeftTextColor="@color/xui_config_color_red"
+            app:sLeftTextString="删除台站" />
+
+    </LinearLayout>
+
+</FrameLayout>
